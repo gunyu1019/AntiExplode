@@ -1,0 +1,49 @@
+# This is a debugging-only setting item.
+# If you don't want the log to get dirty, don't enable it.
+debug: false
+
+# If you activate this item, all items belonging to the key cannot be exploded.
+# Blocks include "Bed" and "Respawn Anchor"
+# Entities include "Creeper", "TNT", "TNT Cart", "Ender Crystal", "Wither", and "Wither Skill".
+globalBlock: false
+globalEntity: false
+
+# The group key value contains the world name.
+# Representative section key include "world", "world_nether", and "world_the_end".
+# For the group value, whether or not to deactivate the bomb according to entities or blocks is selected.
+# If this is enabled, entities or blocks will not explode in the world they belong to.
+#
+# Example Configuration:
+#   world:
+#     CREEPER: true
+#     PRIMED_TNT: false
+# If this happens, the creeper will not explode in world(original world).
+# And because TNT is inactive, it can burst.
+world:
+  CREEPER: true
+  ENDER_CRYSTAL: false
+  PRIMED_TNT: false
+  RESPAWN_ANCHOR: false
+  MINECART_TNT: false
+  WITHER: false
+  WITHER_SKULL: false
+
+world_nether:
+  BED: false
+  CREEPER: false
+  PRIMED_TNT: false
+  MINECART_TNT: false
+
+world_the_end:
+  BED: false
+  CREEPER: false
+  ENDER_CRYSTAL: false
+  PRIMED_TNT: false
+  RESPAWN_ANCHOR: false
+  MINECART_TNT: false
+
+# If you want to send a warning message to the user, please send the message using "comment".
+# Warnings can only be sent to items that the player directly affects. (Respawn Anchor, Bed)
+comment:
+  # BED: Warning! {player} cannot operate the bed.
+  # RESPAWN_ANCHOR: Warning! {player} cannot operate the Respawn Anchor.

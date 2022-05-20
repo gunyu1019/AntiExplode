@@ -1,0 +1,6 @@
+name: AntiExplode
+version: '${version}'
+main: kr.yhs.antiExplode.AntiExplode
+api-version: 1.18
+authors: [ gunyu1019 ]
+description: I hate Creeper
