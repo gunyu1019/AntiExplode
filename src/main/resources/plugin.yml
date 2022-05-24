@@ -4,3 +4,5 @@ main: kr.yhs.antiExplode.AntiExplode
 api-version: 1.18
 authors: [ gunyu1019 ]
 description: I hate Creeper
+libraries:
+  - org.jetbrains.kotlin:kotlin-stdlib:1.6.21
